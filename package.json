@@ -1,0 +1,32 @@
+{
+  "name": "yagro-composables",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/yagro-composables.umd.js",
+  "module": "dist/yagro-composables.es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "dev:host": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.4.6",
+    "@iconify-json/material-symbols-light": "^1.1.7",
+    "@unocss/eslint-config": "^0.58.0",
+    "@vitejs/plugin-vue": "^4.5.1",
+    "@vue/runtime-dom": "^3.4.3",
+    "eslint": "^8.55.0",
+    "pinia": "^2.1.7",
+    "typescript": "^5.3.3",
+    "unocss": "^0.58.0",
+    "vite": "^5.0.5",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5"
+  }
+}

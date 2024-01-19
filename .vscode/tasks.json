@@ -1,0 +1,21 @@
+{
+  "tasks": [
+    {
+      "command": "npm run dev",
+      "group": "none",
+      "label": "YAGRO/DEV",
+      "presentation": {
+        "panel": "new",
+        "reveal": "always"
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "type": "shell",
+      "windows": {
+        "command": "npm run dev"
+      }
+    }
+  ],
+  "version": "2.0.0"
+}
