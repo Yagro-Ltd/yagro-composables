@@ -1,7 +1,7 @@
 {
   "name": "@yagro/composables",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/yagro-composables.umd.js",
   "module": "dist/yagro-composables.es.js",
   "types": "dist/types/index.d.ts",
