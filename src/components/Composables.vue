@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useFormatFileSize } from '../composables/useFormatFileSize'
-import { useExtractFilename } from '../composables/useExtractFilename'
+import { useExtractFileName } from '../composables/useExtractFilename'
+import { useExtractFileExtension } from '../composables/useExtractFileExtension'
 </script>
 
 <template>
@@ -8,8 +9,8 @@ import { useExtractFilename } from '../composables/useExtractFilename'
     <ul>
       <li>useFormatFileSize: {{ useFormatFileSize(12345) }}</li>
       <li>useFormatFileSize: {{ useFormatFileSize(123456789) }}</li>
-      <li>useExtractFilename: {{ useExtractFilename('vegetables.jpg') }}</li>
-      <li>useExtractFilename: {{ useExtractFilename('vegetables') }}</li>
+      <li>useExtractFilename: {{ useExtractFileName('vegetables.jpg') }}</li>
+      <li>useExtractFileExtension: {{ useExtractFileExtension('vegetables.test.jpg') }}</li>
     </ul>
   </div>
 </template>
