@@ -20,9 +20,8 @@ export function useFormatCurrency(value: number | bigint) {
   return formatter?.format(value)
 }
 
-/**
- * 'In-source Test' for the useFormatCurrency function
- */
+// 'In-source Test' for the useFormatCurrency function
+
 if (import.meta.vitest) {
   const { it, expect } = import.meta.vitest
   it('useFormatCurrency', () => {

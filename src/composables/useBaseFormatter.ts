@@ -12,3 +12,11 @@ export function useBaseFormatter(options: Intl.NumberFormatOptions | undefined) 
   const formatter = new Intl.NumberFormat('en-GB', options)
   return formatter
 }
+
+// 'In-source Test' for the useBaseFormatter function
+if (import.meta.vitest) {
+  const { it, expect } = import.meta.vitest
+  it('useBaseFormatter', () => {
+    expect(useBaseFormatter({ style: 'currency', currency: 'EUR' })).toBeInstanceOf(Intl.NumberFormat)
+  })
+}

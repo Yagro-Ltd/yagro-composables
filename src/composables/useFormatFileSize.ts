@@ -18,9 +18,7 @@ export function useFormatFileSize(bytes: number) {
   }).format(bytes / (1000 ** unitIndex))
 }
 
-/**
- * 'In-source Test' for the useFormatFileSize function
- */
+// 'In-source Test' for the useFormatFileSize function
 if (import.meta.vitest) {
   const { it, expect } = import.meta.vitest
   it('useFormatFileSize', () => {

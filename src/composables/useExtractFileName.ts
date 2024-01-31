@@ -19,9 +19,8 @@ export function useExtractFileName(text: string) {
   return text.substring(0, lastDotIndex)
 }
 
-/**
- * 'In-source Test' for the useExtractFileName function
- */
+// 'In-source Test' for the useExtractFileName function
+
 if (import.meta.vitest) {
   const { it, expect } = import.meta.vitest
   it('useExtractFileName', () => {
