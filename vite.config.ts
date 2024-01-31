@@ -25,7 +25,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: '/src/index.ts',
-      name: 'YagroComponentLibrary',
+      name: 'YagroComposables',
       fileName: format => `yagro-composables.${format}.js`,
     },
     rollupOptions: {
