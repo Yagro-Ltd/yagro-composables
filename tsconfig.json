@@ -4,7 +4,7 @@
     "jsx": "preserve",
     "module": "esnext",
     "moduleResolution": "node",
-    "types": ["@vue/runtime-dom"],
+    "types": ["@vue/runtime-dom", "vitest/importMeta"],
     "strict": true,
     "declaration": true,
     "declarationDir": "./dist/types",

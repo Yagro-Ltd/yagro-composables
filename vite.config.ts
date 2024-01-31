@@ -1,9 +1,18 @@
+// vite.config.ts
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
 import typescript from '@rollup/plugin-typescript'
 
 export default defineConfig({
+  test: {
+    includeSource: ['src/composables/**/*.{js,ts}'],
+  },
+  define: {
+    // This removes the test code from the production build
+    'import.meta.vitest': 'undefined',
+  },
   plugins: [
     vue(),
     UnoCSS(),

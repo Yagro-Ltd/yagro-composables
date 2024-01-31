@@ -10,3 +10,15 @@ export function useExtractFileName(fullName: string) {
   /* Otherwise, return the filename, excluding the extension */
   return fullName.substring(0, lastDotIndex)
 }
+
+/**
+ * 'In-source Test' for the useExtractFileName function
+ */
+if (import.meta.vitest) {
+  const { it, expect } = import.meta.vitest
+  it('useExtractFileName', () => {
+    expect(useExtractFileName('example')).toBe('example')
+    expect(useExtractFileName('example.jpg')).toBe('example')
+    expect(useExtractFileName('example.jpg.jpg')).toBe('example.jpg')
+  })
+}
