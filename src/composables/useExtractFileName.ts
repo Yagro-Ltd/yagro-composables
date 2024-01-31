@@ -1,14 +1,22 @@
-export function useExtractFileName(fullName: string) {
-  if (!fullName)
+/**
+ * useExtractFileName
+ * Extracts the filename from a string, excluding the extension
+ * @param text - The filename with extension
+ * @returns The filename without the extension
+ * @example useExtractFileName('file.txt')
+ */
+
+export function useExtractFileName(text: string) {
+  if (!text)
     return ''
 
   /* Find the last dot in the string */
-  const lastDotIndex = fullName.lastIndexOf('.')
+  const lastDotIndex = text.lastIndexOf('.')
   /* If there is no dot, return the full name */
   if (lastDotIndex === -1)
-    return fullName
+    return text
   /* Otherwise, return the filename, excluding the extension */
-  return fullName.substring(0, lastDotIndex)
+  return text.substring(0, lastDotIndex)
 }
 
 /**

@@ -1,6 +1,13 @@
+/**
+ * useFormatFileSize
+ * @description Formats a number as a file with units
+ * @param {number} bytes - The number to format
+ * @returns {string} The formatted file size
+ * @example useFormatFileSize(1000000) // '1 MB'
+ */
+
 import { useBaseFormatter } from './useBaseFormatter'
 
-/* File Size Formatter */
 export function useFormatFileSize(bytes: number) {
   const units = ['byte', 'kilobyte', 'megabyte', 'gigabyte', 'terabyte']
   const unitIndex = Math.max(0, Math.min(Math.floor(Math.log(bytes) / Math.log(1000)), units.length - 1))
