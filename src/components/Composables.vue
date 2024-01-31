@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { useFormatFileSize } from '../composables/useFormatFileSize'
-import { useExtractFileName } from '../composables/useExtractFilename'
-import { useExtractFileExtension } from '../composables/useExtractFileExtension'
+import { useExtractFileExtension, useExtractFileName, useFormatFileSize } from '@yagro/composables'
+import { computed } from 'vue'
+
+const computedFileSize = computed(() => useFormatFileSize(12345))
 </script>
 
 <template>
   <div>
     <ul>
+      <li>computedFileSize: {{ computedFileSize }}</li>
       <li>useFormatFileSize: {{ useFormatFileSize(12345) }}</li>
       <li>useFormatFileSize: {{ useFormatFileSize(123456789) }}</li>
       <li>useExtractFilename: {{ useExtractFileName('vegetables.jpg') }}</li>
