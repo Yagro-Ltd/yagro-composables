@@ -20,7 +20,7 @@
       }
     },
     {
-      "command": "npm run test",
+      "command": "npm run test:watch",
       "group": "test",
       "label": "Composables: Vitest",
       "icon": {

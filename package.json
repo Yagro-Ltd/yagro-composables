@@ -8,16 +8,20 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": "20.11.0"
+  },
   "scripts": {
     "test:watch": "vitest",
     "test:run": "vitest run",
     "dev": "vite",
     "dev:host": "vite --host",
-    "build": "vite build",
+    "build": "npm run test:run && vite build",
     "preview": "vite preview",
     "lint:fix": "eslint . --fix",
     "prepack": "npm run test:run",
-    "prepublish": "npm run test:run && npm run build"
+    "prepublish": "npm run build",
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.4.6",
