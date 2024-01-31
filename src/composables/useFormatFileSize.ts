@@ -27,6 +27,6 @@ if (import.meta.vitest) {
     expect(useFormatFileSize(1000000000)).toBe('1 GB')
     expect(useFormatFileSize(10000000000)).toBe('10 GB')
     expect(useFormatFileSize(100000000000)).toBe('100 GB')
-    expect(useFormatFileSize(1000000000000)).toBe('1 Bananas')
+    expect(useFormatFileSize(1000000000000)).toBe('1 TB')
   })
 }
