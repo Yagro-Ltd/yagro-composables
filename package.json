@@ -9,13 +9,15 @@
     "dist"
   ],
   "scripts": {
+    "test:watch": "vitest",
+    "test:run": "vitest run",
     "dev": "vite",
     "dev:host": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
     "lint:fix": "eslint . --fix",
-    "prepack": "npm run build",
-    "prepublish": "npm run build"
+    "prepack": "npm run test:run",
+    "prepublish": "npm run test:run && npm run build"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.4.6",

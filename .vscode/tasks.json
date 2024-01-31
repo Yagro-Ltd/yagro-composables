@@ -2,11 +2,14 @@
   "tasks": [
     {
       "command": "npm run dev",
-      "group": "none",
-      "label": "YAGRO/DEV",
+      "group": "build",
+      "label": "Composables: Development",
+      "icon": {
+        "color": "terminal.ansiGreen"
+      },
       "presentation": {
-        "panel": "new",
-        "reveal": "always"
+        "reveal": "silent",
+        "panel": "new"
       },
       "runOptions": {
         "runOn": "folderOpen"
@@ -14,6 +17,25 @@
       "type": "shell",
       "windows": {
         "command": "npm run dev"
+      }
+    },
+    {
+      "command": "npm run test",
+      "group": "test",
+      "label": "Composables: Vitest",
+      "icon": {
+        "color": "terminal.ansiBlue"
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "new"
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "type": "shell",
+      "windows": {
+        "command": "npm run test"
       }
     }
   ],
