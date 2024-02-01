@@ -1,16 +1,13 @@
 {
   "name": "@yagro/composables",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "dist/yagro-composables.umd.js",
   "module": "dist/yagro-composables.es.js",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": "20.11.0"
-  },
   "scripts": {
     "test:watch": "vitest",
     "test:run": "vitest run",
