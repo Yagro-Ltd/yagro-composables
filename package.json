@@ -1,7 +1,7 @@
 {
   "name": "@yagro/composables",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "dist/yagro-composables.umd.js",
   "module": "dist/yagro-composables.es.js",
   "types": "dist/types/index.d.ts",
@@ -17,8 +17,7 @@
     "preview": "vite preview",
     "lint:fix": "eslint . --fix",
     "prepack": "npm run test:run",
-    "prepublish": "npm run build",
-    "postinstall": "npm run build"
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.4.6",
