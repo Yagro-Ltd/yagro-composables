@@ -3,7 +3,6 @@
 import process from 'node:process'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import UnoCSS from 'unocss/vite'
 import typescript from '@rollup/plugin-typescript'
 
 export default defineConfig({
@@ -20,7 +19,6 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    UnoCSS(),
   ],
   build: {
     lib: {
@@ -33,7 +31,6 @@ export default defineConfig({
       output: {
         globals: {
           vue: 'Vue',
-          unocss: 'UnoCSS',
         },
       },
       plugins: [
