@@ -27,7 +27,7 @@ export default defineConfig({
       fileName: format => `yagro-composables.${format}.js`,
     },
     rollupOptions: {
-      external: ['vue', 'unocss'],
+      external: ['vue', 'unocss', 'date-fns'],
       output: {
         globals: {
           vue: 'Vue',

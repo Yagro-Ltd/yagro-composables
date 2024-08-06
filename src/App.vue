@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import YCard from './components/YCard.vue'
-import YSwatch from './components/YSwatch.vue'
 import Composables from './components/Composables.vue'
 </script>
 

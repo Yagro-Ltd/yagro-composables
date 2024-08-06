@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useCounter, useExtractFileExtension, useExtractFileName, useFormatFileSize } from '../../dist/yagro-composables.es.js'
+import { useCounter, useExtractFileExtension, useExtractFileName, useFormatDate, useFormatFileSize } from '../../dist/yagro-composables.es.js'
 
 const { count, increment, decrement } = useCounter()
 const computedFileSize = computed(() => useFormatFileSize(12345))
@@ -15,6 +15,8 @@ const computedFileSize = computed(() => useFormatFileSize(12345))
       <li>useFormatFileSize: {{ useFormatFileSize(12345678910) }}</li>
       <li>useExtractFilename: {{ useExtractFileName('vegetables.jpg') }}</li>
       <li>useExtractFileExtension: {{ useExtractFileExtension('vegetables.test.jpg') }}</li>
+      <li>useFormatDate: {{ useFormatDate('2024-01-01') }}</li>
+      <li>useFormatDate: {{ useFormatDate('2024-01-01', 'dd/MM/yyyy') }}</li>
     </ul>
     <button @click="increment">
       Increment

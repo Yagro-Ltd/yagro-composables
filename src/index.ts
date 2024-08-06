@@ -1,3 +1,4 @@
+export { useFormatDate } from './composables/useFormatDate'
 export { useFormatNumber } from './composables/useFormatNumber'
 export { useBaseFormatter } from './composables/useBaseFormatter'
 export { useFormatCurrency } from './composables/useFormatCurrency'

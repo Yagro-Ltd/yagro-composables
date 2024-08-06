@@ -1,7 +1,7 @@
 {
   "name": "@yagro/composables",
   "type": "module",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/yagro-composables.umd.js",
   "module": "dist/yagro-composables.es.js",
   "types": "dist/types/index.d.ts",
@@ -19,11 +19,15 @@
     "prepack": "npm run test:run",
     "prepublish": "npm run build"
   },
+  "peerDependencies": {
+    "date-fns": "^3.6.0"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.4.6",
     "@rollup/plugin-typescript": "^11.1.6",
     "@vitejs/plugin-vue": "^4.5.1",
     "@vue/runtime-dom": "^3.4.3",
+    "date-fns": "^3.6.0",
     "eslint": "^8.55.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.5",
